@@ -33,15 +33,15 @@ class Scrape(models.Model):
 
     # 被害者のデータ
     
-    victim_age_number_10_19 = models.IntegerField('加害者(10歳~19歳)')
+    victim_age_number_10_19 = models.IntegerField('被害者(10歳~19歳)')
     
-    victim_age_number_20_29 = models.IntegerField('加害者(20歳~29歳)')
+    victim_age_number_20_29 = models.IntegerField('被害者(20歳~29歳)')
      
-    victim_age_number_30_39 = models.IntegerField('加害者(30歳~39歳)')
+    victim_age_number_30_39 = models.IntegerField('被害者(30歳~39歳)')
       
-    victim_age_number_40_49 = models.IntegerField('加害者(40歳~49歳)')
+    victim_age_number_40_49 = models.IntegerField('被害者(40歳~49歳)')
     
-    victim_age_number_50_59 = models.IntegerField('加害者(50歳~59歳)')
+    victim_age_number_50_59 = models.IntegerField('被害者(50歳~59歳)')
 
     victim_sum_total = models.IntegerField('被害者の全世代の総数')
     
