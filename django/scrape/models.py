@@ -26,7 +26,7 @@ class Scrape(models.Model):
     
     offender_age_90_older = models.IntegerField('加害者(90歳~)')
     
-    unknown = models.IntegerField('加害者(90歳~)')
+    unknown = models.IntegerField('年齢不明')
     
     offender_sum_total = models.IntegerField('加害者の全世代の総数')
 
