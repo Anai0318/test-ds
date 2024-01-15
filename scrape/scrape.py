@@ -4,7 +4,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import psycopg2
-import time
 
 # データベースに接続するための設定
 conn = psycopg2.connect(
@@ -106,29 +105,5 @@ driver.quit()
 cur.close()
 conn.close()
 
-# 全ての要素を表示する
-print("offender_age_number_0_9:", offender_age_number_0_9)
-print("offender_age_number_10_19:", offender_age_number_10_19)
-print("offender_age_number_20_29:", offender_age_number_20_29)
-print("offender_age_number_30_39:", offender_age_number_30_39)
-print("offender_age_number_40_49:", offender_age_number_40_49)
-print("offender_age_number_50_59:", offender_age_number_50_59)
-print("offender_age_number_60_69:", offender_age_number_60_69)
-print("offender_age_number_70_79:", offender_age_number_70_79)
-print("offender_age_number_80_89:", offender_age_number_80_89)
-print("offender_age_90_older:", offender_age_90_older)
-print("unknown:", unknown)
-print("victim_age_number_10_19:", victim_age_number_10_19)
-print("victim_age_number_20_29:", victim_age_number_20_29)
-print("victim_age_number_30_39:", victim_age_number_30_39)
-print("victim_age_number_40_49:", victim_age_number_40_49)
-print("victim_age_number_50_59:", victim_age_number_50_59)
-print("personal_weapons:", personal_weapons)
-print("handgun:", handgun)
-print("firearm:", firearm)
-print("none:", none)
-print("offender_sum_total:", offender_sum_total)
-print("victim_sum_total:", victim_sum_total)
-print("type_of_weapons_sum_total:", type_of_weapons_sum_total)
 
 # なお、ローカルデータに関してはターミナルでpostgreslに入力しているため、このファイルには記述しておりません
