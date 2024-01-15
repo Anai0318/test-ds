@@ -19,12 +19,11 @@ cur = conn.cursor()
 driver = webdriver.Chrome()
 driver.get('https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend')
 
-# 'Show More' ボタンを探してクリック
+# 'Show More' ボタンを探してクリックするまで待機
 show_more_button = WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.ID, "crime-trend-Offender Age-showmore"))
 )
 show_more_button.click()
-time.sleep(40)
 
 
 html = driver.page_source
